@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--系统分享-->
@@ -17,9 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-0E-oZH">
-                                <rect key="frame" x="88" y="179" width="425" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba9-0E-oZH">
+                                <rect key="frame" x="88" y="179" width="425" height="67"/>
                                 <color key="backgroundColor" red="0.0" green="0.75686274509999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ba9-0E-oZH" secondAttribute="height" multiplier="425:36" constant="-365.97222222222217" id="lfu-8Z-11c"/>
+                                </constraints>
                                 <state key="normal" title="系统分享"/>
                                 <connections>
                                     <action selector="shareActivityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqK-Kb-MI4"/>
@@ -27,6 +32,11 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ba9-0E-oZH" secondAttribute="trailing" constant="67" id="3Ap-uz-OTX"/>
+                            <constraint firstItem="Ba9-0E-oZH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="nD7-MS-JBR"/>
+                            <constraint firstItem="Ba9-0E-oZH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="r0x-Tn-2kY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="系统分享" id="2O0-yB-enR"/>
                 </viewController>
