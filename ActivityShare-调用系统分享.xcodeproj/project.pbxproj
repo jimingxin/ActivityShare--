@@ -15,6 +15,8 @@
 		68C7FEFA1D07C3FA00D63F9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68C7FEF81D07C3FA00D63F9E /* LaunchScreen.storyboard */; };
 		68C7FF051D07C3FA00D63F9E /* ActivityShare_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C7FF041D07C3FA00D63F9E /* ActivityShare_______Tests.m */; };
 		68C7FF101D07C3FA00D63F9E /* ActivityShare_______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C7FF0F1D07C3FA00D63F9E /* ActivityShare_______UITests.m */; };
+		68C7FF201D07C8F500D63F9E /* ZSCustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C7FF1F1D07C8F500D63F9E /* ZSCustomActivity.m */; };
+		68C7FF221D07C91700D63F9E /* 通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 68C7FF211D07C91700D63F9E /* 通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		68C7FF0B1D07C3FA00D63F9E /* ActivityShare-调用系统分享UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityShare-调用系统分享UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C7FF0F1D07C3FA00D63F9E /* ActivityShare_______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ActivityShare_______UITests.m"; sourceTree = "<group>"; };
 		68C7FF111D07C3FA00D63F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68C7FF1E1D07C8F500D63F9E /* ZSCustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCustomActivity.h; sourceTree = "<group>"; };
+		68C7FF1F1D07C8F500D63F9E /* ZSCustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCustomActivity.m; sourceTree = "<group>"; };
+		68C7FF211D07C91700D63F9E /* 通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		68C7FEE91D07C3FA00D63F9E /* ActivityShare-调用系统分享 */ = {
 			isa = PBXGroup;
 			children = (
+				68C7FF1D1D07C8E900D63F9E /* CustomActivity */,
 				68C7FEED1D07C3FA00D63F9E /* AppDelegate.h */,
 				68C7FEEE1D07C3FA00D63F9E /* AppDelegate.m */,
 				68C7FEF01D07C3FA00D63F9E /* ViewController.h */,
@@ -138,6 +144,16 @@
 				68C7FF111D07C3FA00D63F9E /* Info.plist */,
 			);
 			path = "ActivityShare-调用系统分享UITests";
+			sourceTree = "<group>";
+		};
+		68C7FF1D1D07C8E900D63F9E /* CustomActivity */ = {
+			isa = PBXGroup;
+			children = (
+				68C7FF211D07C91700D63F9E /* 通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf */,
+				68C7FF1E1D07C8F500D63F9E /* ZSCustomActivity.h */,
+				68C7FF1F1D07C8F500D63F9E /* ZSCustomActivity.m */,
+			);
+			name = CustomActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +261,7 @@
 			files = (
 				68C7FEFA1D07C3FA00D63F9E /* LaunchScreen.storyboard in Resources */,
 				68C7FEF71D07C3FA00D63F9E /* Assets.xcassets in Resources */,
+				68C7FF221D07C91700D63F9E /* 通过UIActivityViewController实现更多分享服务 - iOS随笔 - SegmentFault.pdf in Resources */,
 				68C7FEF51D07C3FA00D63F9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +289,7 @@
 			files = (
 				68C7FEF21D07C3FA00D63F9E /* ViewController.m in Sources */,
 				68C7FEEF1D07C3FA00D63F9E /* AppDelegate.m in Sources */,
+				68C7FF201D07C8F500D63F9E /* ZSCustomActivity.m in Sources */,
 				68C7FEEC1D07C3FA00D63F9E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
