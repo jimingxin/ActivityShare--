@@ -26,9 +26,9 @@
 }
 
 /**
- *  调用系统分享
+ *  调用系统分享 s
  *  UIActivityViewController相比于UIDocumentInteractionController优势除了可以添加额外的自定义服务，它还提供了非常好的原生服务的定制化功能。我们可以完全根据自己的需求，控制UIActivityViewController提供的系统服务的显示，比如我不想展示AirDrop这个功能，而这点在UIDocumentInteractionController是做不到的。想做到这一点，就需要使用到UIActivityViewController提供的一个属性:
- *  @param sender <#sender description#>
+ *  @param sender 按钮本身
  */
 -(IBAction)shareActivityAction:(UIButton *)sender{
     
